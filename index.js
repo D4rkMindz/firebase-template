@@ -2,6 +2,7 @@ const functions = require('firebase-functions')
 const admin = require('firebase-admin')
 const { Nuxt } = require('nuxt')
 const express = require('express')
+const regions = require('./secrets').secrets.firebase.regions
 
 admin.initializeApp()
 
@@ -38,4 +39,4 @@ async function handleRequest(req, res) {
 
 app.get('*', handleRequest)
 app.use(handleRequest)
-exports.nuxtssr = functions.https.onRequest(app)
+exports.nuxtssr = functions.region(...regions).https.onRequest(app)

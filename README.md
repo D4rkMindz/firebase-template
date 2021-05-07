@@ -6,7 +6,9 @@ Given, that you already set up a firebase app, continue with the following steps
   1. Rename the `secrets.example.js` file to `secrets.js`.
   2. Replace the prefilled <*_ID>s with the values from the firebase [web configuration](https://support.google.com/firebase/answer/7015592)
   3. Search and replace the word `Firebase App` with the name of Your app
-  4. Search and replace the string `<YOUR_PROJECT_ID>` with your project ID (the value of `projectId` in `secrets.js`)
+  4. Replace the string `firebase-app` with your project ID in `package.json`
+  5. Search and replace the string `<YOUR_PROJECT_ID>` with your project ID (the value of `projectId` in `secrets.js`)
+  6. Optionally change the location where your function is stored globally (see [google cloud locations](https://cloud.google.com/about/locations), default is us-central1)
 
 ## Build Setup
 

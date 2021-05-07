@@ -72,7 +72,8 @@ export default {
       firestore: true,
       storage: true,
       functions: {
-        location: 'us-central1',
+        // only take the first one, its only relevant for local emulation
+        location: secrets.firebase.regions[0],
       },
       performance: true,
       analytics: {
