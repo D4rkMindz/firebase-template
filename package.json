@@ -15,7 +15,7 @@
     "deploy": "npm run build:firebase && firebase deploy"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.13.1",
+    "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/firebase": "^7.6.1",
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.14.0",
