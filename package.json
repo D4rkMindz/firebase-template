@@ -40,7 +40,7 @@
     "eslint-plugin-vue": "^7.7.0",
     "firebase-functions-test": "^0.3.0",
     "jest": "^27.0.4",
-    "postcss": "^8.3.5",
+    "postcss": "^8.3.10",
     "vue-jest": "^3.0.4"
   },
   "engines": {
